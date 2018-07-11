@@ -1,0 +1,278 @@
+/*THIS IS A GENERAL SELECTOR, IT'S USED TO SELECT ALL THE ELEMENTS*/
+* {
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: /*'Segoe UI Light',*/ sans-serif;
+    font-size: 100%;
+    background: #ccd;
+}
+
+
+/*THESE ARE THE MULTIPLE SELECTORS(SEMANTIC ELEMENTS)*/
+hgroup, aside, summary, article, section, main, header, footer, nav, figure, figcaption {
+    display: block;
+}
+
+.block {
+    clear: both;
+    display: block;
+}
+
+
+
+/* THIS IS THE GROUP OF MY HEADER AND NAVIGATIONS(IT'S GENERAL TO THE WHOLE SITE) */
+#main_header_group {
+    background: #099;
+}
+#nav {
+    margin: 0;
+    padding: 0;
+    background: #099;
+    list-style-type: none;
+}
+#nav li {
+    float: left;
+    /*display: inline;*/
+}
+#nav li a {
+    color: #fff;
+    font-size: 130%;
+    display: block;
+    background: #099;
+    font-weight: bolder;
+    padding: 12px 15px;
+    text-decoration: none;
+}
+#nav li a:hover {
+    color: #099;
+    background: #fff;
+}
+#main_header {
+    margin: 0;
+    padding: 0;
+    height: 150px;
+    background: #066;
+    border-bottom: 3px solid #cce;
+}
+#main_header #logo_section {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+#main_header #logo_section #logo {
+    width: 100%;
+    height: 100%;
+}
+#main_header #title_section {
+    margin: 0;
+    padding: 0px 12px;
+    color: #fff;
+    font-size: 180%;
+}
+
+/*THIS IS THE END OF THE HEADER GROUP*/
+
+
+
+
+
+
+/*THIS IS THE INDEX.HTML'S MAIN CONTENT DESIGN*/
+#main_content, #main_image {
+    margin: 0;
+    padding: 0;
+}
+#main_image {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    margin-bottom: 30px;
+    border: 5px double #066;
+}
+#main_image > img {
+    width: 100%;
+    height: 100%;
+}
+#main_image figcaption {
+    position: absolute;
+    right: 0;
+    top: 300px;
+    background: #444;
+    padding: 12px 15px;
+    font-size: 170%;
+    font-family: 'monotype corsiva';
+    opacity: 0.6;
+    font-weight: bolder;
+    text-shadow: 1px 1px 20px green;
+    border-radius: 12px;
+    color: #fff;
+}
+
+#description {
+    margin: 0;
+    padding: 0;
+    color: gray;
+}
+#description section {
+    width: 33%;
+    float: left;
+    padding: 10px;
+    text-align: left;
+}
+/*THIS IS THE END OF THE INDEX.HTML'S MAIN CONTENT DESIGN*/
+
+
+
+
+
+
+/*THIS IS THE HOTLINKS DESIGN(IT'S GENERAL TO THE WHOLE SITE)*/
+#hot_links {
+    margin: 0;
+    width: 100%;
+    padding: 0 30px;
+    text-align: center;
+    background: #fff;
+}
+#hot_links figure {
+    width: 30%;
+    display: inline-block;
+    margin: 15px;
+    padding: 0;
+}
+#hot_links figure a {
+    margin: 0px;
+    padding: 0;
+    width: 80%;
+    display: block;
+    font-weight: bold;
+    border-radius: 40%;
+    text-decoration: none;
+}
+#hot_links figure a img {
+    width: 70%;
+    border-radius: 50%;
+    border: 5px solid #ccd;
+}
+
+#hot_links figure a:hover {
+    background: #555;
+    opacity: 0.5;
+    color: #fff;
+    box-shadow: 2px 2px 30px cyan;
+}
+/*THIS IS THE END OF THE HOTLINKS DESIGN*/
+
+
+
+
+
+/*THIS IS THE MAIN FOOTER DESIGN (IT'S ALSO GENERAL TO THE WHOLE SITE)*/
+#main_footer {
+    color: #e1e1e1;
+    background: #066;
+    padding: 15px;
+    font-size: 120%;
+    text-align: center;
+}
+/*THIS IS THE END OF THE MAIN FOOTER DESIGN*/
+
+
+
+
+
+
+
+
+
+/*THIS IS THE CONTACT.HTML'S DEIGN*/
+
+#contact {
+    margin: 0 0 40px;
+    padding: 0;
+    color: #444;
+    text-align: center;
+}
+#contact #contact_info {
+    width: 90%;
+    margin: 0 auto 40px;
+    text-align: left;
+}
+#contact section {
+    width: 49%;
+    float: left;
+    /*background: #e1e1e1;*/
+}
+#contact section input,
+#contact section textarea {
+    width: 80%;
+    font-size: 110%;
+    padding: 8px;
+    border: 1px solid #f1f1f1;
+    border-top: 4px solid #f1f1f1;
+}
+#contact section input[type="submit"] {
+    color: #fff;
+    font-weight: bold;
+    background: lightblue;
+    border-top: 4px solid blue;
+}
+#contact section input[type="submit"]:hover {
+    color: blue;
+    background: #eee;
+}
+#contact section:first-child {
+    font-size: 120%;
+}
+/*THIS IS THE END OF CONTACT.HTML'S DEIGN*/
+
+
+
+
+
+
+
+/*THIS IS THE ACADEMIC.HTML'S DESIGN*/
+
+#gallary {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#gallary figure {
+    width: 31%;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid grey;
+}
+#gallary figure img {
+    width: 100%;
+    height: 250px;
+}
+#gallary figure:hover {
+    box-shadow: 1px 1px 35px blue;
+}
+h1 {
+    color: #444;
+}
+/*THIS IS THE ACADEMIC.HTML'S DEIGN*/
+
+
+
+
+
+
+
+
+
+
+
